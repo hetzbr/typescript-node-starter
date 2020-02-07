@@ -1,0 +1,32 @@
+{
+  "name": "typescript-node-starter",
+  "description": "typescript-node-starter",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "rimraf dist && tsc -p tsconfig.prod.json",
+    "start": "nodemon",
+    "start:prod": "node --max-http-header-size=16000 dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": "^12.15.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "jest": "^25.1.0",
+    "nodemon": "^2.0.2",
+    "rimraf": "^3.0.1",
+    "ts-jest": "^25.2.0",
+    "ts-node": "^8.6.2",
+    "tslint": "^6.0.0",
+    "tslint-config-airbnb": "^5.11.2",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1"
+  }
+}
